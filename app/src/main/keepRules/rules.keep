@@ -1,0 +1,28 @@
+# Add project specific R8 rules here.
+# AGP will combine all keep rule files in src/main/keepRules to pass to R8
+
+# Room Database
+-keep class androidx.room.** { *; }
+-keep class * extends androidx.room.RoomDatabase { *; }
+-keep class com.example.hydralife.data.** { *; }
+
+# WorkManager
+-keep class androidx.work.** { *; }
+-keep class * extends androidx.work.Worker { *; }
+-keep class * extends androidx.work.CoroutineWorker { *; }
+-keep class com.example.hydralife.worker.** { *; }
+
+# OkHttp & Okio
+-keepattributes Signature, InnerClasses, EnclosingMethod
+-dontwarn okhttp3.**
+-dontwarn okio.**
+-keep class okhttp3.** { *; }
+-keep class okio.** { *; }
+
+# MPAndroidChart
+-keep class com.github.mikephil.charting.** { *; }
+-dontwarn com.github.mikephil.charting.**
+
+# Data Models
+-keep class com.example.hydralife.ChatMessage { *; }
+-keep class com.example.hydralife.OnboardingPage { *; }

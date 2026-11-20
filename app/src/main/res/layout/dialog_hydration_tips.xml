@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/surface"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tips_dialog_title"
+        android:textColor="@color/on_surface"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Practical Tips Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/practical_tips_header"
+        android:textColor="@color/primary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:paddingVertical="6dp"
+        android:text="@string/tip_1"
+        android:textColor="@color/on_surface"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:paddingVertical="6dp"
+        android:text="@string/tip_2"
+        android:textColor="@color/on_surface"
+        android:textSize="14sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:paddingVertical="6dp"
+        android:text="@string/tip_3"
+        android:textColor="@color/on_surface"
+        android:textSize="14sp"
+        android:layout_marginBottom="12dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/primary_container"
+        android:layout_marginVertical="8dp" />
+
+    <!-- Educational Resources Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/educational_resources_header"
+        android:textColor="@color/primary"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/tvResource1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:paddingVertical="8dp"
+        android:text="@string/resource_1"
+        android:textColor="@color/primary"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvResource2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/selectableItemBackground"
+        android:paddingVertical="8dp"
+        android:text="@string/resource_2"
+        android:textColor="@color/primary"
+        android:textSize="14sp"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Share Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnShareAdvice"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="@string/share_tip_button"
+        app:backgroundTint="@color/primary"
+        app:cornerRadius="16dp" />
+
+</LinearLayout>
